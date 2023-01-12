@@ -1,5 +1,6 @@
 ﻿using CalendarFormula1.Data.Enums;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace CalendarFormula1.Models
 {
@@ -15,5 +16,14 @@ namespace CalendarFormula1.Models
         public DateTime DataCursa { get; set; }
 
         public CategorieCircuit CategorieCircuit { get; set; }
+
+        //Relationships
+        public List<Piloti_Cursa> Pilotii_Cursaa { get; set; }
+
+        //Tara
+
+        public int TaraId { get; set; }
+        [ForeignKey("TaraId")]
+        public Tara Tara { get; set; }
     }
 }

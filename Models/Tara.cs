@@ -10,5 +10,8 @@ namespace CalendarFormula1.Models
         public string Oras { get; set; }
 
         public string PictureURL { get; set; }
+
+        //Relationhips
+        public List<Cursa> Cursaa { get; set; }
     }
 }

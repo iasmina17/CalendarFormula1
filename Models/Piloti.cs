@@ -12,5 +12,8 @@ namespace CalendarFormula1.Models
         public int NumarPilot { get; set; }
 
         public string Echipa { get; set; }
+
+        //Relationships
+        public List<Piloti_Cursa> Pilotii_Cursaa { get; set; }
     }
 }
